@@ -6,8 +6,10 @@
 ## Install
 `uv tool install git+https://github.com/Notnaton/simplewebui.git`
 
-or just copy the webui.py file and run it with UV:
-`./webui.py`
+
 
 ## Running it
 `simplewebui`
+
+or just copy the webui.py file and run it with UV:
+`./webui.py`
