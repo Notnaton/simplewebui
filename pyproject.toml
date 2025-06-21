@@ -1,0 +1,13 @@
+[project]
+name = "simplewebui"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "litellm",
+    "flask",
+    "markdown-it-py[linkify,plugins]",
+]
+[project.scripts]
+simplewebui = "webui:main"

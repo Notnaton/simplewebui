@@ -6,8 +6,6 @@
 #     "flask",
 #     "markdown-it-py[linkify,plugins]",
 # ]
-# [project.scripts]
-# simplewebui = "webui:main"
 # ///
 
 from __future__ import annotations
