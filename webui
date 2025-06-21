@@ -6,16 +6,9 @@
 #     "flask",
 #     "markdown-it-py[linkify,plugins]",
 # ]
+# [project.scripts]
+# simplewebui = "webui:main"
 # ///
-"""Simple multi-provider chat UI powered by Flask + HTMX.
-
-- Sidebar lists past conversations (stored as JSON in ./chats/).
-- "New Chat" resets the conversation (but keeps provider settings).
-- "Settings" lets you switch Litellm provider (Ollama, LM Studio, llama.cpp, llamafile, …).
-- Conversations stream tokens over Server-Sent Events (htmx-ext-sse).
-
-Security note: this is a demo app. Replace `app.secret_key` and add real auth before production use.
-"""
 
 from __future__ import annotations
 import json
@@ -285,5 +278,8 @@ def settings():
     """
     return form
 
-if __name__ == "__main__":
+def main():
     app.run(port=8000, debug=True)
+
+if __name__ == "__main__":
+    main()
